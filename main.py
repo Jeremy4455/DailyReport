@@ -33,18 +33,25 @@ def report(day):
     prom_butt = driver.find_element(by="css selector", value="#p1_ChengNuo-inputEl-icon")
     prom_butt.click()
     sleep(2)
+    driver.find_element(by="css selector", value="#fineui_7-inputEl-icon").click()
+    sleep(1)
+    driver.find_element(by="css selector", value="#fineui_10-inputEl-icon").click()
+    sleep(1)
+    driver.find_element(by="css selector", value="#fineui_14-inputEl-icon").click()
+    sleep(1)
+    driver.find_element(by="css selector", value="#fineui_16-inputEl-icon").click()
+    sleep(1)
     driver.find_element(by="css selector", value="#fineui_25-inputEl-icon").click()
     sleep(1)
     driver.find_element(by="css selector", value="#fineui_26-inputEl-icon").click()
-    sleep(2)
+    sleep(1)
     driver.find_element(by="css selector", value="#fineui_31-inputEl-icon").click()
-    sleep(2)
+    sleep(1)
     driver.find_element(by="css selector", value="#p1_ctl01_btnSubmit > span > span").click()
     sleep(1)
     driver.find_element(by="css selector", value="#fineui_39").click()
     sleep(2)
     return
-
 
 def check():
     login()
