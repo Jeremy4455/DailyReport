@@ -53,6 +53,7 @@ def report(day):
     sleep(2)
     return
 
+
 def check():
     login()
     driver.get("https://selfreport.shu.edu.cn/ReportHistory.aspx")
@@ -66,8 +67,11 @@ def check():
     for need_report in need_reports:
         print(need_report+"已补报！")
         report(need_report)
-    print("填报完成！")
+    if not need_reports:
+        print("无需填报！")
+    else:
+        print("填报完成！")
 
-
+        
 if __name__ == "__main__":
     check()
